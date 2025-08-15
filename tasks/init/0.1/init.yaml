@@ -26,3 +26,4 @@ spec:
       set -euo pipefail
       printf "init task\n"
       printf "Working for project %s\n" "$PROJECT_NAME"
+      printf "revision:\n"
