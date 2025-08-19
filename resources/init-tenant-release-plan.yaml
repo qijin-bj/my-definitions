@@ -19,7 +19,6 @@ spec:
         - "{{ git_sha }}"
         - "{{ git_short_sha }}"
         - "{{ digest_sha }}"
-  target: managed-tenant-namespace
   tenantPipeline:
     pipelineRef:
       resolver: git
