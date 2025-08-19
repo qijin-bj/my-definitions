@@ -28,3 +28,4 @@ spec:
       printf "Working for project %s\n" "$PROJECT_NAME"
       printf "revision:\n"
       printf "test on 2025-08-19:\n"
+      printf "show image info\n"
