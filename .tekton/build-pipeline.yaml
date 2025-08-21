@@ -176,17 +176,6 @@ spec:
       value: $(tasks.prefetch-dependencies.results.SOURCE_ARTIFACT)
     runAfter:
     - prefetch-dependencies
-
-    # taskRef:
-    #   params:
-    #   - name: name
-    #     value: tkn-bundle-oci-ta
-    #   - name: bundle
-    #     value: quay.io/konflux-ci/tekton-catalog/task-tkn-bundle-oci-ta:0.2@sha256:43e20b7e039152dc08acf00fa60c15f36be238fd5c5e0830ef6e53c339c13b78
-    #   - name: kind
-    #     value: task
-    #   resolver: bundles
-
     taskRef:
       params:
       - name: url
