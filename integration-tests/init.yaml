@@ -1,0 +1,19 @@
+apiVersion: appstudio.redhat.com/v1beta2
+kind: IntegrationTestScenario
+metadata:
+  name: init-test
+spec:
+  application: my-definitions
+  contexts:
+    - description: Integration tests for publishing bundles
+      name: application
+  resolverRef:
+    resolver: git
+    resourceKind: pipelinerun
+    params:
+      - name: url
+        value: https://github.com/my-konflux-stuff/my-definitions
+      - name: revision
+        value: main
+      - name: pathInRepo
+        value: integration-tests/test-pipeline.yaml
