@@ -29,3 +29,4 @@ spec:
       printf "revision:\n"
       printf "test on 2025-08-19:\n"
       printf "show image info\n"
+      printf "integration tests has been set up.\n"
